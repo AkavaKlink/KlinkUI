@@ -5,7 +5,7 @@ class Header extends React.Component<{}, {}> {
 
   public render():JSX.Element {
     return (
-      <Menu fixed="top">
+      <Menu fixed="top" inverted>
         <Container>
           <Menu.Item as="a" href="/" header>
             Klink.io
