@@ -8,3 +8,17 @@ body {
   text-align: center;
   margin: auto;
 }
+
+/* Overrides */
+
+.ui.secondary.menu {
+  background-color: #3C3C3D;
+}
+
+.ui.secondary.menu .header.item {
+  color: white;
+}
+
+.ui.secondary.menu .item, .ui.secondary.menu .active.item:hover, .ui.secondary.menu .item:active {
+  color: white;
+}
