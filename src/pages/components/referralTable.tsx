@@ -1,7 +1,16 @@
 import * as React from "react";
 import { Table, Icon, Button } from 'semantic-ui-react';
 
-class ReferralTable extends React.Component<{}, {}> {
+interface ReferralTableProps {
+  data: any;
+}
+
+class ReferralTable extends React.Component<ReferralTableProps, {}> {
+  public constructor(props: ReferralTableProps) {
+    super(props);
+    console.log(props);
+  }
+
   public render(): JSX.Element {
     return (
       <div>
@@ -88,7 +97,7 @@ class ReferralTable extends React.Component<{}, {}> {
                 <Button primary>Track</Button>
               </Table.Cell>
             </Table.Row>
-            
+
           </Table.Body>
         </Table>
       </div>

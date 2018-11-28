@@ -1,0 +1,26 @@
+[
+  {
+    "engineer": "Software Engineer",
+  },
+  {
+    "manager": "Project Manager",
+  },
+  {
+    "ux": "UI/UX Engineer",
+  },
+  {
+    "fullstack": "Fullstack Developer",
+  },
+  {
+    "react": "React Engineer",
+  },
+  {
+    "frontend": "Frontend Engineer",
+  },
+  {
+    "devops": "Devops Engineer",
+  },
+  {
+    "security": "Security Engineer",
+  },
+]

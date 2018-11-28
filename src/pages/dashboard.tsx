@@ -1,7 +1,7 @@
 import * as React from "react";
 import Header from './components/header';
 import { Container, Grid, Button } from 'semantic-ui-react';
-import ReferralTable from "./components/referralTable";
+// import ReferralTable from "./components/referralTable";
 
 class Dashboard extends React.Component<{}, {}> {
   public render(): JSX.Element {
@@ -15,7 +15,6 @@ class Dashboard extends React.Component<{}, {}> {
             </Grid.Row>
             <Grid.Row>
               <Grid.Column width={16}>
-              <ReferralTable/>
               <a href="/new-referral">
                 <Button primary>Submit A Referral</Button>
               </a>
