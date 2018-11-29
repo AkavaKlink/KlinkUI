@@ -71,8 +71,8 @@ class TalentForm extends React.Component<{}, TalentFormState> {
               Security Engineer
             </Button>
           </Grid.Row>
+          <TalentTable type={type}/>
         </Grid>
-        <TalentTable type={type}/>
       </Form>
     );
   }

@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Grid, Form, Input, TextArea, Button } from "semantic-ui-react";
 
+// button needs a call back up to to render the payment data section
+
 class CompanyForm extends React.Component<{}, {}> {
   public render(): JSX.Element {
     return (
@@ -37,14 +39,14 @@ class CompanyForm extends React.Component<{}, {}> {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={10}>
+            <Grid.Column width={16}>
               <Form.Field>
                 <TextArea
                   type="string"
                   placeholder="Tell us about more your project..."
                 />
               </Form.Field>
-              <Button seconday>Submit</Button>
+              <Button primary>Submit</Button>
             </Grid.Column>
           </Grid.Row>
         </Grid>

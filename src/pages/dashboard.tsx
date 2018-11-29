@@ -8,13 +8,31 @@ interface DashboardState {
   data: any;
 }
 
+interface ReferralDataObject {
+  date: string;
+  user: string;
+  client: string;
+  prospect: string;
+  amount: number;
+}
+
+const filterData = (data: any) => {
+  let userEvents: any = [];
+  data.forEach((element: ReferralDataObject) => {
+    if(element.user.toLowerCase() === "tenji") { // needs a user interface and props
+      userEvents.push(element);
+    }
+  });
+  return userEvents;
+};
+
 class Dashboard extends React.Component<{}, DashboardState> {
 
   public constructor(props: any) {
     super(props);
     // when ingesting data, filter by only you
     this.state = {
-      data: data
+      data: filterData(data),
     };
   }
 
