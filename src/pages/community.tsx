@@ -2,8 +2,7 @@ import * as React from "react";
 import Header from './components/header';
 import { Container, Grid } from 'semantic-ui-react';
 import ReferralTable from "./components/referralTable";
-
-const data = require ("../data/main.json");
+import * as data from  "../data/main.json";
 
 interface CommunityState {
   data: any;
@@ -16,6 +15,7 @@ class Community extends React.Component<{}, CommunityState> {
     this.state = {
       data: data,
     };
+    console.log(data);
   }
 
   public render(): JSX.Element {
