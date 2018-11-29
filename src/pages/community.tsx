@@ -15,7 +15,6 @@ class Community extends React.Component<{}, CommunityState> {
     this.state = {
       data: data,
     };
-    console.log(data);
   }
 
   public render(): JSX.Element {
