@@ -3,6 +3,7 @@ import { Table, Button, Grid  } from "semantic-ui-react";
 
 interface TalentTableProps {
   type: string;
+  data: any;
 }
 
 class TalentTable extends React.Component<TalentTableProps, {}> {
@@ -49,11 +50,6 @@ class TalentTable extends React.Component<TalentTableProps, {}> {
         </Grid.Row>
         <Grid.Row width={16}>
           {this.renderTable()}
-        </Grid.Row>
-        <Grid.Row>
-          <Grid.Column width={8}>
-            <Button>Back to Talent</Button>
-          </Grid.Column>
         </Grid.Row>
       </div>
     );

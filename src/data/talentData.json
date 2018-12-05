@@ -4,69 +4,69 @@
     "income": 32000,
     "location": "Smalltown, USA",
     "referral": 1000,
-    "type": "engineer",
+    "type": "engineer"
   },
   {
     "company": "Ferrari",
     "income": 35000,
     "location": "Milano, Italy",
     "referral": 1000,
-    "type": "manager",
+    "type": "manager"
   },
   {
     "company": "Red Bull",
     "income": 42000,
     "location": "Chesire, UK",
     "referral": 1500,
-    "type": "ux",
+    "type": "ux"
   },
   {
     "company": "Force India",
     "income": 30000,
     "location": "Bombay, India",
     "referral": 800,
-    "type": "fullstack",
+    "type": "fullstack"
   },
   {
     "company": "Haas",
     "income": 22000,
     "location": "Austin, TX",
     "referral": 500,
-    "type": "devops",
+    "type": "devops"
   },
   {
     "company": "Mercedes",
     "income": 39000,
     "location": "Berlin, Germany",
     "referral": 900,
-    "type": "security",
+    "type": "security"
   },
   {
     "company": "Renault",
     "income": 32000,
     "location": "Paris, France",
     "referral": 500,
-    "type": "engineer",
+    "type": "engineer"
   },
   {
     "company": "Williams",
     "income": 32000,
     "location": "Smalltown, USA",
     "referral": 1000,
-    "type": "engineer",
+    "type": "engineer"
   },
   {
     "company": "Torro Rosso",
     "income": 32000,
     "location": "Monaco, EU",
     "referral": 1000,
-    "type": "engineer",
+    "type": "engineer"
   },
   {
     "company": "McLaren",
     "income": 32000,
     "location": "London, England",
     "referral": 1000,
-    "type": "react",
-  },
+    "type": "react"
+  }
 ]

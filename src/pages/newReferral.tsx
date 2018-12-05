@@ -3,6 +3,8 @@ import Header from './components/header';
 import { Container, Grid, Button } from 'semantic-ui-react';
 import CompanyForm from './components/referralForm/companyForm';
 import TalentForm from './components/referralForm/talentForm';
+import * as talentData from "../data/talentData.json";
+import * as talentTypes from "../data/talentType.json";
 
 interface referralState {
   company: boolean,
@@ -35,16 +37,29 @@ class NewReferral extends React.Component<{}, referralState> {
     });
   };
 
+  public resetState(): void {
+    this.setState({
+      company: false,
+      talent: false,
+    });
+  }
+
   public renderQuestions(): JSX.Element {
     if ( this.state.company ) {
       return (
-        <CompanyForm/>
+        <div>
+          <CompanyForm/>
+          <Button onClick={() => this.resetState()} primary>Back</Button>
+        </div>
       );
     }
 
     if ( this.state.talent ) {
       return (
-        <TalentForm/>
+        <div>
+          <TalentForm data={talentData} talentTypes={talentTypes}/>
+          <Button onClick={() => this.resetState()} primary>Back</Button>
+        </div>
       );
     }
     return (

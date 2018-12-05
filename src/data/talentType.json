@@ -1,26 +1,34 @@
 [
   {
-    "engineer": "Software Engineer"
+    "type": "engineer",
+    "name": "Software Engineer"
   },
   {
-    "manager": "Project Manager"
+    "type": "manager",
+    "name": "Project Manager"
   },
   {
-    "ux": "UI/UX Engineer"
+    "type": "ux",
+    "name": "UI/UX Engineer"
   },
   {
-    "fullstack": "Fullstack Developer"
+    "type":"fullstack",
+    "name": "Fullstack Developer"
   },
   {
-    "react": "React Engineer"
+    "type": "react",
+    "name": "React Engineer"
   },
   {
-    "frontend": "Frontend Engineer"
+    "type": "frontend",
+    "name": "Frontend Engineer"
   },
   {
-    "devops": "Devops Engineer"
+    "type": "devops",
+    "name": "Devops Engineer"
   },
   {
-    "security": "Security Engineer"
+    "type": "security",
+    "name": "Security Engineer"
   }
 ]
