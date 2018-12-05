@@ -4,6 +4,7 @@ import TalentTable from "./talentTable";
 
 interface TalentFormState {
   type: string;
+  name: string;
 }
 
 interface TalentFormProps {
@@ -21,13 +22,15 @@ class TalentForm extends React.Component<TalentFormProps, TalentFormState> {
   public constructor(props: any) {
     super(props);
     this.state = {
-      type: ""
+      type: "",
+      name: "All Positions",
     };
   }
 
-  public updateTalentType(type: string) {
+  public updateTalentType(type: string, name: string) {
     this.setState({
-      type
+      type,
+      name
     });
   }
 
@@ -38,7 +41,7 @@ class TalentForm extends React.Component<TalentFormProps, TalentFormState> {
         <Button
           key={index}
           secondary
-          onClick={() => this.updateTalentType(element.type)}>
+          onClick={() => this.updateTalentType(element.type, element.name)}>
           {element.name}
         </Button>
       );
@@ -48,7 +51,7 @@ class TalentForm extends React.Component<TalentFormProps, TalentFormState> {
 
 
   public render(): JSX.Element {
-    let { type } = this.state;
+    let { type, name } = this.state;
     let { data, talentTypes } = this.props;
     return (
       <Grid>
@@ -59,7 +62,7 @@ class TalentForm extends React.Component<TalentFormProps, TalentFormState> {
           {this.renderTalentSelect(talentTypes)}
         </Grid.Row>
         <Grid.Row>
-          <TalentTable data={data} type={type}/>
+          <TalentTable data={data} type={type} name={name}/>
         </Grid.Row>
       </Grid>
     );

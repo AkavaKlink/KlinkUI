@@ -22,7 +22,6 @@ class NewReferral extends React.Component<{}, referralState> {
   }
 
   public onSelectCompany(): void {
-    console.log("company selected");
     this.setState({
       company: true,
       talent: false,
@@ -30,7 +29,6 @@ class NewReferral extends React.Component<{}, referralState> {
   };
 
   public onSelectTalent(): void {
-    console.log("company selected");
     this.setState({
       company: false,
       talent: true,
